@@ -322,11 +322,7 @@
      <div class="grid lg:grid-cols-2 gap-16 items-center"><!-- Visual -->
       <div class="relative order-2 lg:order-1">
        <div class="relative bg-gradient-to-br from-[#ff6209]/10 to-transparent rounded-3xl p-8">
-        <svg class="w-full" viewbox="0 0 400 350" fill="none"><!-- Africa continent stylized --> <path d="M200 50 C150 60, 100 100, 90 150 C80 200, 100 250, 130 280 C160 310, 200 320, 240 300 C280 280, 310 240, 320 190 C330 140, 300 90, 260 60 C240 50, 220 45, 200 50Z" fill="#ff6209" opacity="0.1" stroke="#ff6209" stroke-width="2" /> <!-- Digital nodes on Africa --> <circle cx="180" cy="120" r="12" fill="#ff6209" /> <circle cx="220" cy="150" r="10" fill="#ff6209" opacity="0.8" /> <circle cx="160" cy="180" r="8" fill="#ff6209" opacity="0.6" /> <circle cx="240" cy="200" r="14" fill="#ff6209" /> <circle cx="200" cy="250" r="10" fill="#ff6209" opacity="0.7" /> <!-- Connection lines --> <line x1="180" y1="120" x2="220" y2="150" stroke="#ff6209" stroke-width="2" opacity="0.5" /> <line x1="220" y1="150" x2="240" y2="200" stroke="#ff6209" stroke-width="2" opacity="0.5" /> <line x1="160" y1="180" x2="200" y2="250" stroke="#ff6209" stroke-width="2" opacity="0.5" /> <line x1="240" y1="200" x2="200" y2="250" stroke="#ff6209" stroke-width="2" opacity="0.5" /> <line x1="180" y1="120" x2="160" y2="180" stroke="#ff6209" stroke-width="2" opacity="0.5" /> <!-- Pulse effect --> <circle cx="240" cy="200" r="20" fill="none" stroke="#ff6209" stroke-width="1" opacity="0.3">
-          <animate attributename="r" from="14" to="30" dur="2s" repeatcount="indefinite" />
-          <animate attributename="opacity" from="0.5" to="0" dur="2s" repeatcount="indefinite" />
-         </circle>
-        </svg><!-- Stats overlay -->
+        <img src="images/images afrique.jpg" alt="Innovation digitale en Afrique" class="w-[100cm] aspect-square object-cover rounded-3xl"<!-- Stats overlay -->
         <div class="absolute bottom-4 right-4 bg-white rounded-2xl shadow-xl p-4">
          <div class="flex items-center gap-3">
           <div class="w-12 h-12 bg-[#ff6209]/10 rounded-xl flex items-center justify-center">
@@ -482,148 +478,118 @@
       </div>
      </div>
     </div>
-   </section><!-- Nos Projets Section -->
-   <section id="projets" class="py-20 lg:py-32 bg-white relative overflow-hidden">
-    <div class="absolute bottom-0 left-0 w-96 h-96 bg-[#ff6209]/5 rounded-full blur-3xl"></div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-     <div class="text-center max-w-3xl mx-auto mb-16"><span class="text-[#ff6209] font-semibold text-sm uppercase tracking-wider">Portfolio</span>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mt-3">Nos <span class="gradient-text">projets réalisés</span></h2>
-      <p class="text-lg text-gray-600 mt-4">Découvrez quelques-unes de nos réalisations qui ont transformé nos clients</p>
-     </div>
-     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"><!-- Projet 1 -->
-      <div class="group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-300">
-       <div class="relative h-48 bg-gradient-to-br from-[#ff6209] to-[#ff8a47] overflow-hidden">
-        <div class="absolute inset-0 flex items-center justify-center">
-         <svg class="w-24 h-24 text-white/20" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-         </svg>
-        </div>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-        <div class="absolute top-4 right-4"><span class="px-3 py-1 bg-white/20 backdrop-blur-sm text-white rounded-full text-xs font-medium">E-Commerce</span>
-        </div>
+   <!-- Projets Section -->
+
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body>
+  <section id="projets" class="py-20 lg:py-32 bg-white">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16"><span class="text-[#ff6209] font-semibold text-sm uppercase tracking-wider">Portfolio</span>
+     <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mt-3">Nos projets <span class="gradient-text">réalisés</span></h2>
+     <p class="text-lg text-gray-600 mt-4">Découvrez quelques-unes de nos réalisations qui ont transformé des entreprises</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"><!-- Projet 1 - E-commerce -->
+     <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 bg-white">
+      <div class="relative h-64 bg-gray-100 overflow-hidden"><img src="images/e-commerce.jpg" alt="Projet E-commerce" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="console.error('Image failed to load:', this.src); this.style.background='linear-gradient(135deg, #ff6209 0%, #ff8a47 100%)'; this.alt='Image E-commerce à venir';">
+      </div>
+      <div class="p-6">
+       <div class="flex items-center gap-2 mb-3"><span class="px-3 py-1 bg-[#ff6209]/10 text-[#ff6209] text-xs font-semibold rounded-full">E-commerce</span>
        </div>
-       <div class="p-6">
-        <h3 class="text-xl font-bold mb-2 group-hover:text-[#ff6209] transition-colors">Plateforme E-Commerce Mode</h3>
-        <p class="text-gray-600 text-sm mb-4">Boutique en ligne complète avec paiement mobile, gestion des stocks et tableau de bord analytique.</p>
-        <div class="flex flex-wrap gap-2 mb-4"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Shopify</span> <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Payment Mobile</span> <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Analytics</span>
-        </div>
-        <div class="flex items-center justify-between"><span class="text-[#ff6209] font-semibold text-sm">+250% de ventes</span>
-         <svg class="w-5 h-5 text-[#ff6209] group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-         </svg>
-        </div>
-       </div>
-      </div><!-- Projet 2 -->
-      <div class="group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-300">
-       <div class="relative h-48 bg-gradient-to-br from-blue-500 to-blue-600 overflow-hidden">
-        <div class="absolute inset-0 flex items-center justify-center">
-         <svg class="w-24 h-24 text-white/20" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-         </svg>
-        </div>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-        <div class="absolute top-4 right-4"><span class="px-3 py-1 bg-white/20 backdrop-blur-sm text-white rounded-full text-xs font-medium">Application</span>
-        </div>
-       </div>
-       <div class="p-6">
-        <h3 class="text-xl font-bold mb-2 group-hover:text-[#ff6209] transition-colors">App Mobile Livraison</h3>
-        <p class="text-gray-600 text-sm mb-4">Application de livraison à la demande avec géolocalisation en temps réel et paiement intégré.</p>
-        <div class="flex flex-wrap gap-2 mb-4"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">React Native</span> <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">GPS</span> <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Push Notif</span>
-        </div>
-        <div class="flex items-center justify-between"><span class="text-[#ff6209] font-semibold text-sm">10K+ téléchargements</span>
-         <svg class="w-5 h-5 text-[#ff6209] group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-         </svg>
-        </div>
-       </div>
-      </div><!-- Projet 3 -->
-      <div class="group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-300">
-       <div class="relative h-48 bg-gradient-to-br from-green-500 to-green-600 overflow-hidden">
-        <div class="absolute inset-0 flex items-center justify-center">
-         <svg class="w-24 h-24 text-white/20" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" /> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
-         </svg>
-        </div>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-        <div class="absolute top-4 right-4"><span class="px-3 py-1 bg-white/20 backdrop-blur-sm text-white rounded-full text-xs font-medium">Marketing</span>
-        </div>
-       </div>
-       <div class="p-6">
-        <h3 class="text-xl font-bold mb-2 group-hover:text-[#ff6209] transition-colors">Campagne Digital Banking</h3>
-        <p class="text-gray-600 text-sm mb-4">Stratégie marketing digitale complète avec SEO, réseaux sociaux et publicité ciblée.</p>
-        <div class="flex flex-wrap gap-2 mb-4"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">SEO</span> <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Social Ads</span> <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Content</span>
-        </div>
-        <div class="flex items-center justify-between"><span class="text-[#ff6209] font-semibold text-sm">+400% de visibilité</span>
-         <svg class="w-5 h-5 text-[#ff6209] group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-         </svg>
-        </div>
-       </div>
-      </div><!-- Projet 4 -->
-      <div class="group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-300">
-       <div class="relative h-48 bg-gradient-to-br from-purple-500 to-purple-600 overflow-hidden">
-        <div class="absolute inset-0 flex items-center justify-center">
-         <svg class="w-24 h-24 text-white/20" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-         </svg>
-        </div>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-        <div class="absolute top-4 right-4"><span class="px-3 py-1 bg-white/20 backdrop-blur-sm text-white rounded-full text-xs font-medium">E-Learning</span>
-        </div>
-       </div>
-       <div class="p-6">
-        <h3 class="text-xl font-bold mb-2 group-hover:text-[#ff6209] transition-colors">Plateforme E-Learning</h3>
-        <p class="text-gray-600 text-sm mb-4">Système de gestion d'apprentissage en ligne avec vidéos, quiz interactifs et certificats.</p>
-        <div class="flex flex-wrap gap-2 mb-4"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">LMS</span> <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Video</span> <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Certificats</span>
-        </div>
-        <div class="flex items-center justify-between"><span class="text-[#ff6209] font-semibold text-sm">5K+ étudiants</span>
-         <svg class="w-5 h-5 text-[#ff6209] group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-         </svg>
-        </div>
-       </div>
-      </div><!-- Projet 5 -->
-      <div class="group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-300">
-       <div class="relative h-48 bg-gradient-to-br from-pink-500 to-pink-600 overflow-hidden">
-        <div class="absolute inset-0 flex items-center justify-center">
-         <svg class="w-24 h-24 text-white/20" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-         </svg>
-        </div>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-        <div class="absolute top-4 right-4"><span class="px-3 py-1 bg-white/20 backdrop-blur-sm text-white rounded-full text-xs font-medium">Site Web</span>
-        </div>
-       </div>
-       <div class="p-6">
-        <h3 class="text-xl font-bold mb-2 group-hover:text-[#ff6209] transition-colors">Site Vitrine Immobilier</h3>
-        <p class="text-gray-600 text-sm mb-4">Site web moderne avec galeries photo, visites virtuelles 360° et système de réservation.</p>
-        <div class="flex flex-wrap gap-2 mb-4"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">WordPress</span> <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">360° Tour</span> <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Booking</span>
-        </div>
-        <div class="flex items-center justify-between"><span class="text-[#ff6209] font-semibold text-sm">+180% de leads</span>
-         <svg class="w-5 h-5 text-[#ff6209] group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-         </svg>
-        </div>
-       </div>
-      </div><!-- Projet 6 -->
-      <div class="group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-300">
-       <div class="relative h-48 bg-gradient-to-br from-yellow-500 to-yellow-600 overflow-hidden">
-        <div class="absolute inset-0 flex items-center justify-center">
-         <svg class="w-24 h-24 text-white/20" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-         </svg>
-        </div>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-        <div class="absolute top-4 right-4"><span class="px-3 py-1 bg-white/20 backdrop-blur-sm text-white rounded-full text-xs font-medium">Dashboard</span>
-        </div>
-       </div>
-       <div class="p-6">
-        <h3 class="text-xl font-bold mb-2 group-hover:text-[#ff6209] transition-colors">Dashboard Analytics PME</h3>
-        <p class="text-gray-600 text-sm mb-4">Tableau de bord analytique en temps réel pour suivi des performances et aide à la décision.</p>
-        <div class="flex flex-wrap gap-2 mb-4"><span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">React</span> <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Charts</span> <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">Real-time</span>
-        </div>
-        <div class="flex items-center justify-between"><span class="text-[#ff6209] font-semibold text-sm">+300% efficacité</span>
-         <svg class="w-5 h-5 text-[#ff6209] group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-         </svg>
-        </div>
+       <h3 class="text-xl font-bold mb-2">Plateforme Fashion Boutique</h3>
+       <p class="text-gray-600 text-sm mb-4">Site e-commerce complet avec paiement mobile money et gestion des stocks en temps réel.</p>
+       <div class="flex items-center justify-between"><span class="text-[#ff6209] font-semibold text-sm">+250% de ventes</span>
        </div>
       </div>
-     </div><!-- CTA -->
-     <div class="text-center mt-16">
-      <p class="text-gray-600 mb-6 text-lg">Vous avez un projet en tête ?</p><a href="#contact" class="btn-primary px-8 py-4 rounded-full text-white font-semibold text-lg inline-flex items-center gap-2"> Discutons de votre projet 
-       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-       </svg></a>
+     </div><!-- Projet 2 - Application Mobile -->
+     <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 bg-white">
+      <div class="relative h-64 bg-gray-100 overflow-hidden"><img src="images/apptechart.png" alt="Projet Application Mobile" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="console.error('Image failed to load:', this.src); this.style.background='linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%)'; this.alt='Image App Mobile à venir';">
+      </div>
+      <div class="p-6">
+       <div class="flex items-center gap-2 mb-3"><span class="px-3 py-1 bg-blue-100 text-blue-600 text-xs font-semibold rounded-full">App Mobile</span>
+       </div>
+       <h3 class="text-xl font-bold mb-2">Application TechStart</h3>
+       <p class="text-gray-600 text-sm mb-4">Application mobile iOS et Android pour la gestion de projets avec synchronisation cloud.</p>
+       <div class="flex items-center justify-between"><span class="text-blue-600 font-semibold text-sm">10k+ téléchargements</span>
+       </div>
+      </div>
+     </div><!-- Projet 3 - Marketing Digital -->
+     <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 bg-white">
+      <div class="relative h-64 bg-gray-100 overflow-hidden"><img src="images/marketing digital.png" alt="Projet Marketing Digital" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="console.error('Image failed to load:', this.src); this.style.background='linear-gradient(135deg, #10b981 0%, #34d399 100%)'; this.alt='Image Marketing à venir';">
+      </div>
+      <div class="p-6">
+       <div class="flex items-center gap-2 mb-3"><span class="px-3 py-1 bg-green-100 text-green-600 text-xs font-semibold rounded-full">Marketing Digital</span>
+       </div>
+       <h3 class="text-xl font-bold mb-2">Campagne RestauPlus</h3>
+       <p class="text-gray-600 text-sm mb-4">Stratégie marketing complète avec SEO, réseaux sociaux et publicités ciblées.</p>
+       <div class="flex items-center justify-between"><span class="text-green-600 font-semibold text-sm">+400% visibilité</span>
+       </div>
+      </div>
+     </div><!-- Projet 4 - E-learning -->
+     <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 bg-white">
+      <div class="relative h-64 bg-gray-100 overflow-hidden"><img src="images/e-learning.jpg" alt="Projet E-learning" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="console.error('Image failed to load:', this.src); this.style.background='linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%)'; this.alt='Image E-learning à venir';">
+      </div>
+      <div class="p-6">
+       <div class="flex items-center gap-2 mb-3"><span class="px-3 py-1 bg-purple-100 text-purple-600 text-xs font-semibold rounded-full">E-learning</span>
+       </div>
+       <h3 class="text-xl font-bold mb-2">Plateforme EduOnline</h3>
+       <p class="text-gray-600 text-sm mb-4">Solution complète d'apprentissage en ligne avec vidéos, quiz et certifications.</p>
+       <div class="flex items-center justify-between"><span class="text-purple-600 font-semibold text-sm">5000+ étudiants</span>
+       </div>
+      </div>
+     </div><!-- Projet 5 - Site Web -->
+     <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 bg-white">
+      <div class="relative h-64 bg-gray-100 overflow-hidden"><img src="images/immobilier.jpg" alt="Projet Site Web" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="console.error('Image failed to load:', this.src); this.style.background='linear-gradient(135deg, #ec4899 0%, #f472b6 100%)'; this.alt='Image Site Web à venir';">
+      </div>
+      <div class="p-6">
+       <div class="flex items-center gap-2 mb-3"><span class="px-3 py-1 bg-pink-100 text-pink-600 text-xs font-semibold rounded-full">Site Web</span>
+       </div>
+       <h3 class="text-xl font-bold mb-2">Site Immobilier Plus</h3>
+       <p class="text-gray-600 text-sm mb-4">Portail immobilier moderne avec visites virtuelles 3D et système de réservation.</p>
+       <div class="flex items-center justify-between"><span class="text-pink-600 font-semibold text-sm">+300% conversions</span>
+       </div>
+      </div>
+     </div><!-- Projet 6 - Dashboard -->
+     <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 bg-white">
+      <div class="relative h-64 bg-gray-100 overflow-hidden"><img src="images/Dashboard.png" alt="Projet Dashboard" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="console.error('Image failed to load:', this.src); this.style.background='linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%)'; this.alt='Image Dashboard à venir';">
+      </div>
+      <div class="p-6">
+       <div class="flex items-center gap-2 mb-3"><span class="px-3 py-1 bg-yellow-100 text-yellow-700 text-xs font-semibold rounded-full">Dashboard</span>
+       </div>
+       <h3 class="text-xl font-bold mb-2">Dashboard LogisticPro</h3>
+       <p class="text-gray-600 text-sm mb-4">Tableau de bord analytique en temps réel pour la gestion logistique et des livraisons.</p>
+       <div class="flex items-center justify-between"><span class="text-yellow-700 font-semibold text-sm">Temps réel</span>
+       </div>
+      </div>
      </div>
     </div>
+   </div>
+  </section>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c4a85cd66f955aa',t:'MTc2OTU0MDczOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+
+     <!-- CTA Section -->
+<html>
+ <head>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body>
+  <section class="py-16 bg-gradient-to-br from-[#ff6209] to-[#ff8a47]">
+   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Vous avez un projet en tête ?</h2>
+    <p class="text-white/90 text-lg mb-8">Discutons ensemble de vos besoins et transformons vos idées en réalité digitale</p><a href="#contact" class="inline-flex items-center gap-2 bg-white text-[#ff6209] px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl"> Discutons de votre projet 
+     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+     </svg></a>
+   </div>
+  </section>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c4a94c0977d55aa',t:'MTc2OTU0MTM1MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
    </section><!-- Ils nous font confiance Section -->
    <section class="py-20 lg:py-32 bg-white border-t border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
