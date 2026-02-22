@@ -1152,16 +1152,34 @@
         });
         
         // Contact Form Submission
-      // Contact Form Submission (Netlify)
-
-const contactForm = document.getElementById('contact-form');
+      const contactForm = document.getElementById('contact-form');
 const submitBtn = document.getElementById('submit-btn');
+const successMessage = document.getElementById('success-message');
 
-contactForm.addEventListener('submit', function() {
-    
+contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
     submitBtn.disabled = true;
     submitBtn.innerHTML = "Envoi en cours...";
-    
+
+    fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(new FormData(contactForm)).toString()
+    })
+    .then(() => {
+
+        contactForm.reset();
+
+        successMessage.classList.remove("hidden");
+
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = "Envoyer le message";
+
+    })
+    .catch(() => {
+        alert("Erreur d'envoi. Réessayez.");
+    });
 });
         // Smooth scroll for all anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
