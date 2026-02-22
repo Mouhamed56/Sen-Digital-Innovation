@@ -1151,41 +1151,17 @@
         });
         
         // Contact Form Submission
-        const contactForm = document.getElementById('contact-form');
-        const submitBtn = document.getElementById('submit-btn');
-        const successMessage = document.getElementById('success-message');
-        
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Disable button and show loading state
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = '<span>Envoi en cours...</span>';
-            
-            // Simulate form submission (replace with actual API call)
-            setTimeout(() => {
-                // Reset form
-                contactForm.reset();
-                
-                // Show success message
-                successMessage.classList.remove('hidden');
-                
-                // Re-enable button
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = `
-                    <span>Envoyer le message</span>
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
-                    </svg>
-                `;
-                
-                // Hide success message after 5 seconds
-                setTimeout(() => {
-                    successMessage.classList.add('hidden');
-                }, 5000);
-            }, 1500);
-        });
-        
+      // Contact Form Submission (Netlify)
+
+const contactForm = document.getElementById('contact-form');
+const submitBtn = document.getElementById('submit-btn');
+
+contactForm.addEventListener('submit', function() {
+    
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = "Envoi en cours...";
+    
+});
         // Smooth scroll for all anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
