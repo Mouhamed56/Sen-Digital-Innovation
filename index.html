@@ -1172,7 +1172,13 @@ contactForm.addEventListener('submit', function(e) {
         contactForm.reset();
 
         successMessage.classList.remove("hidden");
+successMessage.classList.remove("hidden");
+contactForm.reset();
 
+// Cache le message après 5 secondes
+setTimeout(() => {
+successMessage.classList.add("hidden");
+}, 5000);
         submitBtn.disabled = false;
         submitBtn.innerHTML = "Envoyer le message";
 
